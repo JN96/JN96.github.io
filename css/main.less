@@ -1,0 +1,221 @@
+html {
+    background-color: white;
+    font-size: 1em;
+    line-height: 1.4;
+    background-image: radial-gradient(salmon 5%, transparent 0), radial-gradient(salmon 5%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    background-attachment: fixed;
+    font-family: Montserrat, sans-serif;
+
+    @import "./vendor/fontawesome/less/fontawesome.less";
+    @import "./vendor/fontawesome/less/solid.less";
+    @import "./vendor/fontawesome/less/brands";
+
+    body {
+
+        div {
+
+            &.content {
+
+                margin-bottom: 0rem !important;
+                background-color: white;
+
+                span {
+
+                    &.divider {
+                        display: block;
+                        height: 1px;
+                        border: 0;
+                        border-top: 1px solid #ccc;
+                        margin: 0.5em 0;
+                        padding: 0;
+                    }
+
+                    &.emphasis {
+                        font-weight: bolder;
+                        font-style: italic;
+                    }
+                }
+
+                section {
+
+                    &.header {
+
+                        padding: 1rem 1rem 1rem;
+
+                        .container {
+
+                            .level {
+
+                                .links {
+
+                                    .level-left {
+
+                                    }
+
+                                    .level-right {
+
+                                        a {
+
+                                            span {
+
+                                                padding: 5px;
+
+                                                &.icon-linkedin {
+                                                    .fa-icon;
+                                                    .fab;
+                                                    .fa-2x;
+
+                                                    color: #4a4a4a;
+
+                                                    &:before {
+                                                        text-decoration: none;
+                                                        content: @fa-var-linkedin;
+                                                    }
+
+                                                    &:hover {
+                                                        color: #0073B0;
+                                                    }
+                                                }
+
+                                                &.icon-github {
+                                                    .fa-icon;
+                                                    .fab;
+                                                    .fa-2x;
+
+                                                    color: #4a4a4a;
+
+                                                    &:before {
+                                                        content: @fa-var-github;
+                                                    }
+
+                                                    &:hover {
+                                                        color: #000000;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.intro {
+
+                        .container {
+
+                            .columns {
+
+                                .column {
+
+                                    img {
+                                        width: 250px;
+                                        height: 250px;
+                                        border-radius: 180px;
+                                    }
+
+                                    p {
+                                        margin-bottom: 1em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.education {
+
+                        .container {
+
+                            .columns {
+
+                                .column {
+
+                                    display: flex;
+
+                                    .box {
+
+                                        width: 100%;
+
+                                        img {
+                                            width: 70px !important;
+                                            height: 65px !important;
+                                            border-radius: 0px;
+                                            float: left;
+                                            margin-right: 20px;
+                                        }
+
+                                        p:nth-child(4) {
+                                            margin-left: 85px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.experience {
+
+                        .container {
+
+                            .columns {
+
+                                .column {
+
+                                    display: flex;
+
+                                    .box {
+
+                                        img {
+                                            width: 90px !important;
+                                            height: 55px !important;
+                                            border-radius: 0px;
+                                            float: left;
+                                            margin-bottom: 20px;
+                                        }
+
+                                        p {
+                                            clear: both;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &.skills {
+
+                        .container {
+
+                            .box {
+
+                                table {
+
+                                }
+                            }
+                        }
+                    }
+
+                    &.projects {
+
+                        .container {
+
+                            .box {
+
+                                ul {
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                footer {
+                    padding: 1rem 0.5rem 3rem;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
