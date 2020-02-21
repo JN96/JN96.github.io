@@ -1,4 +1,4 @@
-ames Nicholson Digital Résumé
+James Nicholson Digital Résumé
 
 This is a short digital version of my résumé which also serves as an outlet for me to tinker with some frontend wizadry. So far it includes the following sections:
 
